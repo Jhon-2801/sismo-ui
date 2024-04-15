@@ -1,16 +1,28 @@
-# sismo
+# Sismos
 
-A new Flutter project.
+![img-home](/assets/home.png)
 
-## Getting Started
+![img-details](/assets/details.png)
 
-This project is a starting point for a Flutter application.
+![img-comment](/assets/comment.png)
 
-A few resources to get you started if this is your first Flutter project:
+## Descripción
+Aplicacion de prueba tecnica Sismos
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Requisitos
+- Flutter versión 3.16.7
+- Dart versión 3.2.4
+- Otros requisitos
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Instalación
+Instrucciones para instalar y configurar el proyecto.
+
+## Uso
+Instrucciones para ejecutar el proyecto y cómo utilizar sus características.
+
+## Contribución
+Información sobre cómo contribuir al proyecto, incluyendo guías de estilo de código y cómo enviar pull requests.
+
+## Licencia
+Información sobre la licencia del proyecto.
+
