@@ -1,5 +1,11 @@
 # Sismos
 
+![img-home](/assets/home.png)
+
+![img-details](/assets/details.png)
+
+![img-comment](/assets/comment.png)
+
 ## Descripción
 Aplicacion de prueba tecnica Sismos
 
@@ -19,3 +25,4 @@ Información sobre cómo contribuir al proyecto, incluyendo guías de estilo de 
 
 ## Licencia
 Información sobre la licencia del proyecto.
+
