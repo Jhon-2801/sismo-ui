@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:sismo/config/api/sismo_api.dart';
 
 import 'package:sismo/config/routes/app_router.dart';
 import 'package:sismo/presentation/pages/pages.dart';
+import 'package:sismo/presentation/providers/feature_provider.dart';
 import 'package:sismo/presentation/providers/providers.dart';
 import 'package:sismo/presentation/services/services.dart';
 
-void main() => runApp(const AppState());
+void main() {
+  SismoApi.configureDio();
+  runApp(const AppState());
+}
 
 class AppState extends StatelessWidget {
   const AppState({super.key});
@@ -15,9 +20,8 @@ class AppState extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(
-          create: (_) => SideMenuProvider(),
-        )
+        ChangeNotifierProvider(create: (_) => SideMenuProvider()),
+        ChangeNotifierProvider(create: (_) => FeatureProvider()),
       ],
       child: const MyApp(),
     );

@@ -1,8 +1,9 @@
 class FeatureModel {
   final int id;
+  final String idEvent;
   final int magnitude;
   final String place;
-  final DateTime time;
+  final String time;
   final bool tsunami;
   final String magType;
   final String title;
@@ -12,6 +13,7 @@ class FeatureModel {
 
   FeatureModel({
     required this.id,
+    required this.idEvent,
     required this.magnitude,
     required this.place,
     required this.time,
@@ -25,9 +27,10 @@ class FeatureModel {
 
   factory FeatureModel.fromJson(Map<String, dynamic> json) => FeatureModel(
         id: json["id"],
+        idEvent: json["attributes"]["event_id"],
         magnitude: json["attributes"]["magnitude"],
         place: json["attributes"]["place"],
-        time: DateTime.parse(json["attributes"]["time"]),
+        time: json["attributes"]["time"],
         tsunami: json["attributes"]["tsunami"],
         magType: json["attributes"]["mag_type"],
         title: json["attributes"]["title"],

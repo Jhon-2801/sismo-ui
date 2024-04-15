@@ -4,14 +4,12 @@ import 'package:google_fonts/google_fonts.dart';
 class MenuItem extends StatefulWidget {
   final String text;
   final IconData icon;
-  final bool isActive;
   final Function onPressed;
 
   const MenuItem(
       {super.key,
       required this.text,
       required this.icon,
-      this.isActive = true,
       required this.onPressed});
 
   @override
@@ -24,15 +22,11 @@ class _MenuItemState extends State<MenuItem> {
   Widget build(BuildContext context) {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 200),
-      color: isHovered
-          ? Colors.white.withOpacity(0.1)
-          : widget.isActive
-              ? Colors.white.withOpacity(0.2)
-              : Colors.transparent,
+      color: isHovered ? Colors.white.withOpacity(0.1) : Colors.transparent,
       child: Material(
-        color: Colors.transparent,
+        color: Colors.white.withOpacity(0.1),
         child: InkWell(
-          onTap: widget.isActive ? null : () => widget.onPressed(),
+          onTap: () => widget.onPressed(),
           child: Padding(
             padding: const EdgeInsets.only(left: 50, top: 15, bottom: 15),
             child: MouseRegion(

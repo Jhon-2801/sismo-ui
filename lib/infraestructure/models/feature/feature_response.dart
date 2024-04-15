@@ -1,4 +1,4 @@
-import 'package:sismo/infraestructure/models/feature_model.dart';
+import 'package:sismo/infraestructure/models/feature/feature_model.dart';
 
 class FeatureResponse {
   final List<FeatureModel> data;
